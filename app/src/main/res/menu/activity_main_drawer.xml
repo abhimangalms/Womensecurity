@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/emergency_contact"
+            android:icon="@drawable/ic_menu_emergencycall"
+            android:title="Emergency Contact" />
+
+
+        <item
+            android:id="@+id/police"
+            android:icon="@drawable/ic_menu_police"
+            android:title="Contact nearBy Police" />
+
+        <item
+            android:id="@+id/start_trip"
+            android:icon="@drawable/start"
+            android:title="Start The Trip" />
+
+        <item
+            android:id="@+id/safe_unsafe"
+            android:icon="@drawable/start"
+            android:title="Check safety zones" />
+
+<item
+            android:id="@+id/safe_unsaf"
+            android:icon="@drawable/start"
+            android:title="Settings" />
+
+<item
+            android:id="@+id/safe_unsa"
+            android:icon="@drawable/start"
+            android:title="Logout" />
+
+
+    </group>
+
+    <!--<item android:title="Communicate">-->
+    <!--<menu>-->
+    <!--<item-->
+    <!--android:id="@+id/nav_share"-->
+    <!--android:icon="@drawable/ic_menu_share"-->
+    <!--android:title="Share" />-->
+    <!--<item-->
+    <!--android:id="@+id/nav_send"-->
+    <!--android:icon="@drawable/ic_menu_send"-->
+    <!--android:title="Send" />-->
+    <!--</menu>-->
+    <!--</item>-->
+
+</menu>
