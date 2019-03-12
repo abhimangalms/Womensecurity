@@ -6,34 +6,34 @@
     <group android:checkableBehavior="single">
         <item
             android:id="@+id/emergency_contact"
-            android:icon="@drawable/ic_menu_emergencycall"
+            android:icon="@drawable/ic_call_black_24dp"
             android:title="Emergency Contact" />
 
 
         <item
             android:id="@+id/police"
-            android:icon="@drawable/ic_menu_police"
-            android:title="Contact nearBy Police" />
+            android:icon="@drawable/ic_perm_contact_calendar_black_24dp"
+            android:title="Help line numbers" />
+
+        <!--<item-->
+        <!--android:id="@+id/start_trip"-->
+        <!--android:icon="@drawable/start"-->
+        <!--android:title="Start The Trip" />-->
+
+        <!--<item-->
+        <!--android:id="@+id/safe_unsafe"-->
+        <!--android:icon="@drawable/start"-->
+        <!--android:title="Check safety zones" />-->
+
+        <!--<item-->
+            <!--android:id="@+id/safe_unsaf"-->
+            <!--android:icon="@drawable/start"-->
+            <!--android:title="Settings" />-->
 
         <item
-            android:id="@+id/start_trip"
-            android:icon="@drawable/start"
-            android:title="Start The Trip" />
-
-        <item
-            android:id="@+id/safe_unsafe"
-            android:icon="@drawable/start"
-            android:title="Check safety zones" />
-
-<item
-            android:id="@+id/safe_unsaf"
-            android:icon="@drawable/start"
-            android:title="Settings" />
-
-<item
-            android:id="@+id/safe_unsa"
-            android:icon="@drawable/start"
-            android:title="Logout" />
+            android:id="@+id/help"
+            android:icon="@drawable/ic_help_black_24dp"
+            android:title="Help" />
 
 
     </group>

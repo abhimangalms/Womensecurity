@@ -17,15 +17,13 @@ public class PoliceActivity extends AppCompatActivity {
         setContentView(R.layout.activity_police);
 
         ArrayList<PoliceDetail> policeDetails = new ArrayList<>();
-        policeDetails.add(new PoliceDetail("Deputy Comissioner Of Police", "01127034873"));
-        policeDetails.add(new PoliceDetail("Police station Karol Bagh", "01128720482"));
-        policeDetails.add(new PoliceDetail("Police station Rajendra Nagar", "0112874012"));
-        policeDetails.add(new PoliceDetail("Police station Paharganj", "01123524746"));
-        policeDetails.add(new PoliceDetail("Police station Connought Place", "01123747100"));
-        policeDetails.add(new PoliceDetail("DCP Office, Delhi Police", "100"));
-        policeDetails.add(new PoliceDetail("Anti crime cell @CCPM West and Outer District", "08882111255"));
-        policeDetails.add(new PoliceDetail("Khyala Police", "08750871123"));
-        policeDetails.add(new PoliceDetail("Police Station Punjabi Bagh", "0112554162"));
+        policeDetails.add(new PoliceDetail("Police Station (Nearest)", "100"));
+        policeDetails.add(new PoliceDetail("Police Helpline (Head Quarters, Thiruvananthapuram)", "0471-324 3000/4000/5000"));
+        policeDetails.add(new PoliceDetail("Police Message Centre", "94 97 900000"));
+        policeDetails.add(new PoliceDetail("Police High Way Help Line", "9846 100 100"));
+        policeDetails.add(new PoliceDetail("Nirbhaya Toll Free Number", "1800 425 1400"));
+        policeDetails.add(new PoliceDetail("NORKA ROOTS Call Centre", "1800 425 3939"));
+        policeDetails.add(new PoliceDetail("SP Women Cell", "94979 96992"));
 
 
         Police adapter = new Police(policeDetails, getApplicationContext());

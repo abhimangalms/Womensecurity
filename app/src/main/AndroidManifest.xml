@@ -4,8 +4,7 @@
     package="com.codingblocks.suraksha">
 
     <uses-permission android:name="android.permission.SEND_SMS" />
-    <uses-permission android:name="android.permission.INTERNET" />
-    <!-- <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" /> -->
+    <uses-permission android:name="android.permission.INTERNET" /> <!-- <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" /> -->
     <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
     <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
     <uses-permission android:name="android.permission.CALL_PHONE" />
@@ -18,11 +17,9 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme"
         tools:ignore="GoogleAppIndexingWarning">
-
-
+        <activity android:name=".InformationsActivity"></activity>
         <activity
             android:name=".WelcomePage"
-
             android:theme="@style/AppTheme.NoActionBar">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -30,8 +27,6 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-
-
         <activity
             android:name=".MainActivityNav"
             android:label="Silent helper"
@@ -42,17 +37,11 @@
                 <category android:name="android.intent.category.DEFAULT" />
             </intent-filter>
         </activity>
-
-
         <activity android:name=".StartTripActivity" />
         <activity android:name=".LoginActivity" />
-        <activity android:name=".RegisterActivity" />
-
-        <!-- <service android:name=".LocationMonitoringService" /> -->
+        <activity android:name=".RegisterActivity" /> <!-- <service android:name=".LocationMonitoringService" /> -->
         <activity android:name=".OngoingTripActivity" />
-        <activity android:name=".Contact" />
-
-        <!-- <service android:name=".LocationMonitoringService" /> -->
+        <activity android:name=".Contact" /> <!-- <service android:name=".LocationMonitoringService" /> -->
         <activity
             android:name=".EndTripActivity"
             android:label="@string/title_activity_end_trip"
@@ -73,7 +62,7 @@
         </receiver>
 
         <activity android:name=".SafeUnsafeActivity" />
-        <activity android:name=".PoliceActivity"></activity>
+        <activity android:name=".PoliceActivity" />
     </application>
 
 </manifest>

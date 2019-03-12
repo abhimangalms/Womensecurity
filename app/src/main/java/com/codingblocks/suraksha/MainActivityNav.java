@@ -151,8 +151,8 @@ public class MainActivityNav extends AppCompatActivity
                         .getLocation(LocationManager.NETWORK_PROVIDER);
 
                 if (nwLocation != null) {
-                     latitude = nwLocation.getLatitude();
-                     longitude = nwLocation.getLongitude();
+                    latitude = nwLocation.getLatitude();
+                    longitude = nwLocation.getLongitude();
                     Toast.makeText(
                             getApplicationContext(),
                             "Mobile Location (NW): \nLatitude: " + latitude
@@ -162,7 +162,6 @@ public class MainActivityNav extends AppCompatActivity
                     Toast.makeText(getApplicationContext(), "Enable network", Toast.LENGTH_SHORT).show();
                     showSettingsAlert("NETWORK");
                 }
-
 
 
                 //getting saved emergeny contact from the SharedPreferences
@@ -176,7 +175,10 @@ public class MainActivityNav extends AppCompatActivity
 
 //                    String message = "Please help... I'm in a trouble. And my current location is : https://www.google.com/maps/@28.7298838,76.7325634,11z";
 //                    String message = "Please help... I'm in a trouble. And my current location is : https://www.google.com/maps/@"+latitude+ ","+longitude+",11z";
-                    String message="Please help me. This is my location"+ "http://maps.google.com/maps?saddr="+latitude+","+longitude;
+                    String message = "Please help me. This is my location" + "http://maps.google.com/maps?saddr=" + latitude + "," + longitude;
+
+//                    String message = "Please help me. This is my location" + "http://maps.google.com/maps?saddr= 10.1416, 76.1783";
+
 //                smsSendMessage(panicButton);
 
                     sendSMS(phoneNo, message); //sending message without opening message app
@@ -283,6 +285,9 @@ public class MainActivityNav extends AppCompatActivity
 
         //noinspection SimplifiableIfStatement
         if (id == R.id.action_settings) {
+
+            Intent intent = new Intent(getApplicationContext(), InformationsActivity.class);
+            startActivity(intent);
             return true;
         }
 
@@ -300,18 +305,25 @@ public class MainActivityNav extends AppCompatActivity
             Intent i = new Intent(getBaseContext(), Contact.class);
             startActivity(i);
 
-        } else if (id == R.id.safe_unsafe) {
-            Intent i = new Intent(getBaseContext(), SafeUnsafeActivity.class);
-            startActivity(i);
+        }
+//        else if (id == R.id.safe_unsafe) {
+//            Intent i = new Intent(getBaseContext(), SafeUnsafeActivity.class);
+//            startActivity(i);
 
-        } else if (id == R.id.start_trip) {
+//        }
+//        else if (id == R.id.start_trip) {
 
-            Intent i = new Intent(getBaseContext(), StartTripActivity.class);
-            startActivity(i);
+//            Intent i = new Intent(getBaseContext(), StartTripActivity.class);
+//            startActivity(i);
 
 
-        } else if (id == R.id.police) {
+//        }
+        else if (id == R.id.police) {
             Intent i = new Intent(getBaseContext(), PoliceActivity.class);
+            startActivity(i);
+        }
+        else if (id == R.id.help) {
+            Intent i = new Intent(getBaseContext(), InformationsActivity.class);
             startActivity(i);
         }
 
